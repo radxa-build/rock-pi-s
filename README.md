@@ -5,8 +5,7 @@
 
 A collection of auto-generated images for Rock Pi S.
 
-Rockchip released a new SoC revision (RK3308B-S), and all board produced in 2022 and after are based on this revision.
-You can identify the SoC revision by the chip marking: RK3308B-S will have `RK3308B` written on the chip instead of `RK3308`.
+Rockchip released a new SoC revision (RK3308B-S) in 2021, and boards produced in and after 2022 are based on this revision. Existing images will not work correctly on this newer chip unless they are updated to include the support.
 
 * Armbian image will have name started with `Armbian`.
 * Radxa debos image will have name started with the board name.</br>
