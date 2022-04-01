@@ -5,7 +5,9 @@
 
 A collection of auto-generated images for Rock Pi S.
 
-* Armbian images will have name started with `Armbian`.
+
+* Armbian image will have name started with `Armbian`.
+* Radxa debos image will have name started with the board name.
 * Legacy Radxa debos image can be found [here](https://github.com/radxa/rock-pi-s-images-released/releases).
 
 ## Where can I download the image?
