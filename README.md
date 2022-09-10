@@ -9,8 +9,14 @@ Rockchip released a new SoC revision (RK3308B-S) in 2021, and boards produced in
 
 * Armbian image will have name started with `Armbian`.
 * Radxa debos image will have name started with the board name.</br>
-  Support RK3308B-S since [2022/04/01](https://github.com/radxa-build/rockpi-s/releases/tag/20220401-0343).
+  Currently, only RK3308B-S variant is supported since [2022/04/01](https://github.com/radxa-build/rockpi-s/releases/tag/20220401-0343).
+  For non RK3308B-S variant, please use the legacy Radxa debos image.
 * Legacy Radxa debos image can be found [here](https://github.com/radxa/rock-pi-s-images-released/releases).
+
+## How can I tell my board is using RK3308B-S?
+
+1. The silkscreen on the chip says `RK3308B`, and
+2. The line below `RK3308B` should end with letter `S`.
 
 ## Where can I download the image?
 
