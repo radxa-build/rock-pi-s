@@ -35,7 +35,8 @@ jobs:
       matrix:
         boards: [rock-pi-s]
         build_systems: [rbuild]
-        distros: [debian, ubuntu]
+        # distros: [debian, ubuntu]
+        suites: [bookworm, jammy]
         flavors: [kde, cli]
     steps:
       - name: Checkout
@@ -45,7 +46,8 @@ jobs:
         if: matrix.build_systems == 'rbuild'
         with:
           board: ${{ matrix.boards }}
-          distro: ${{ matrix.distros }}
+          # distro: ${{ matrix.distros }}
+          suite: ${{ matrix.suites }}
           flavor: ${{ matrix.flavors }}
           release-id: ${{ needs.prepare_release.outputs.release_id }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
