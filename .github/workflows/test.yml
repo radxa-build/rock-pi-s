@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
       - name: Generate rbuild changelog
         uses: radxa-repo/rbuild-changelog@main
         with:
@@ -42,7 +42,7 @@ jobs:
         flavors: [kde, cli]
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
       - name: Upload rbuild image
         uses: radxa-repo/rbuild@main
         if: matrix.build_systems == 'rbuild'
