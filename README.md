@@ -1,27 +1,25 @@
 # ROCK Pi S
-[![Build image for Release channel](https://github.com/radxa-build/rock-pi-s/actions/workflows/build.yml/badge.svg)](https://github.com/radxa-build/rock-pi-s/actions/workflows/build.yml) [![Build image for Test channel](https://github.com/radxa-build/rock-pi-s/actions/workflows/test.yml/badge.svg)](https://github.com/radxa-build/rock-pi-s/actions/workflows/test.yml)
+[![Build image for Release channel](https://github.com/radxa-build/rock-pi-s/actions/workflows/build.yaml/badge.svg)](https://github.com/radxa-build/rock-pi-s/actions/workflows/build.yaml) [![Build image for Test channel](https://github.com/radxa-build/rock-pi-s/actions/workflows/test.yaml/badge.svg)](https://github.com/radxa-build/rock-pi-s/actions/workflows/test.yaml)
 
 ## What is this?
 
 This repo is the central location for Radxa-built system images for ROCK Pi S.
 
-## What images are provided?
+## Which image should I use?
 
-Currently 4 flavors are provided:
+For most systems, Radxa now only supports the Debian Desktop image.
 
-- Debian KDE: This flavor is officially supported, tested, and recommended for all users.
-- Debian CLI: This flavor is officially supported. This flavor is quite minimal and is intended for headless usage. We do not support desktop usage on top of this flavor.
-- Ubuntu KDE: This flavor is provided as-is except for critical issues. Users should look at Debian KDE as an alternative.
-- Ubuntu CLI: This flavor is provided as-is except for critical issues. Users should look at Debian CLI as an alternative.
+Other variants that were previously provided AS-IS are no longer provided. Interested users need to build those by themselves.
 
 Please also always use [the latest release](https://github.com/radxa-build/rock-pi-s/releases/latest) instead of any pre-release / test builds. Those will not be supported.
 
-## Is there any other options?
+## Where is the source code?
 
-- [Armbian](https://www.armbian.com/rockpi-s/)
+This repository is only for hosting the GitHub workflows that build the image. As such, you will need to examine the workflow to find the builder.
 
 ## Help! Something doesn't work!
 
-For other questions, please first take a look at [our Wiki](https://wiki.radxa.com/RockpiS), which covers the most basic usages.
+For other questions, please first take a look at [our Documentation](https://docs.radxa.com), which covers the most basic usages.
 
 Should you have any additional questions, please visit [our forum](https://forum.radxa.com/) or [our Discord](https://rock.sh/go), and we are willing to help.
+
