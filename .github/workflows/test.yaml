@@ -3,6 +3,8 @@ env:
 jobs:
   build:
     needs: "prepare_release"
+    permissions:
+      contents: "write"
     runs-on: "ubuntu-latest"
     steps:
     - name: "Checkout"
@@ -11,7 +13,7 @@ jobs:
       uses: "RadxaOS-SDK/rsdk/.github/actions/build@main"
       with:
         edition: "${{ matrix.edition }}"
-        github-token: "${{ secrets.GITHUB_TOKEN }}"
+        github-token: "${{ github.token }}"
         product: "${{ matrix.product }}"
         release-id: "${{ needs.prepare_release.outputs.release_id }}"
         suite: "${{ matrix.suite }}"
@@ -65,7 +67,7 @@ jobs:
         prerelease: true
         tag_name: "rsdk-t${{ github.run_number }}"
         target_commitish: "main"
-        token: "${{ secrets.GITHUB_TOKEN }}"
+        token: "${{ github.token }}"
 name: "Build image for test channel"
 "on":
   workflow_dispatch: {}
